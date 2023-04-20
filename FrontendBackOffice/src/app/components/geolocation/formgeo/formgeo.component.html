@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-sm-8">
+        <!-- <h2>Create Data:</h2> -->
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="Challenge" class="control-label col-sm-2">
+              <!-- Challenge -->
+            </label>
+            <div class="col-sm-10">
+              <input 
+                type="challenge" 
+                class="form-control" 
+                id="challenge" 
+                name="challenge" [(ngModel)]="model.challenge"
+                placeholder="Enter a New challenge">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Coordenadas" class="control-label col-sm-2">
+              <!-- Coordenadas -->
+            </label>
+            <div class="col-sm-10">
+              <input 
+                type="coordenadas" 
+                class="form-control" 
+                id="coordenadas" 
+                name="coordenadas" [(ngModel)]="model.coordenadas" 
+                placeholder="Nuevas coordenadas">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="xp" class="control-label col-sm-2">
+              <!-- Operativo -->
+            </label>
+            <div class="col-sm-10">
+              <input 
+                type="text" 
+                class="form-control" 
+                id="operativo" 
+                name="operativo" [(ngModel)]="model.operativo" 
+                placeholder="Enter a New Xp">
+            </div>
+            </div>
+          <br>
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <button
+                type="submit"
+                class="btn btn-success"
+                (click)="addGeolocation()"
+              >
+              Save
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+</div>

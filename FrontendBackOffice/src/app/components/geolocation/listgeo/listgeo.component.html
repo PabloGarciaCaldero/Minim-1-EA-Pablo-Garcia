@@ -1,0 +1,31 @@
+<div class="row">
+    <div >
+        <br>
+      <!-- <h2>Read Data: </h2> -->
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Challenge</th>
+            <th>Coordenadas</th>
+            <th>Operativo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let geo of geolocation; let i = index">
+            <!--<td>{{employee._id}}</td>-->
+            <td>{{geo.challenge}}</td>
+            <td>{{geo.coordenadas}}</td>
+            <td>{{geo.operativo}}</td>
+            <td>
+              <a (click)="editarGeo(i)" class="btn btn-success">
+                Edit
+              </a>
+              <a (click)="eliminarGeo(geo._id)" class="btn btn-danger">
+                Delete
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>  
